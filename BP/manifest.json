@@ -19,7 +19,7 @@
 		"min_engine_version": [
 			1,
 			21,
-			120
+			0
 		],
 		"uuid": "82a97248-0f28-4221-ae41-9909fa768e72",
 		"version": [
@@ -62,22 +62,6 @@
 		{
 			"module_name": "@minecraft/server",
 			"version": "1.13.0"
-		},
-		{
-			"module_name": "@minecraft/server-gametest",
-			"version": "1.0.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-ui",
-			"version": "1.0.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-admin",
-			"version": "1.0.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-net",
-			"version": "1.0.0-beta"
 		}
 	]
 }

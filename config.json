@@ -9,9 +9,9 @@
 	"description": "This Addon is have 5 Underrated Anime for Bedrock version",
 	"experimentalGameplay": {
 		"upcomingCreatorFeatures": true,
-		"experimentalCreatorCameraFeatures": true,
+		"experimentalCreatorCameraFeatures": false,
 		"enableGameTestFramework": true,
-		"renderDragonFeatures": true,
+		"renderDragonFeatures": false,
 		"educationEdition": false
 	},
 	"bdsProject": true,
