@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"pyppiix"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.53"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "Underrated Anime Magic Pack",
+		"description": "This Addon is have 5 Underrated Anime for Bedrock version",
+		"min_engine_version": [
+			1,
+			21,
+			120
+		],
+		"uuid": "0892cfc0-b140-4807-a251-16131dc1b34a",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "cf5a2189-2558-4156-a912-034744bbdaba",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "82a97248-0f28-4221-ae41-9909fa768e72",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

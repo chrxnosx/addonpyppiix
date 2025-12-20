@@ -1,0 +1,44 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Underrated Anime Magic Pack",
+	"namespace": "uam",
+	"authors": [
+		"pyppiix"
+	],
+	"targetVersion": "1.21.130",
+	"description": "This Addon is have 5 Underrated Anime for Bedrock version",
+	"experimentalGameplay": {
+		"upcomingCreatorFeatures": true,
+		"experimentalCreatorCameraFeatures": true,
+		"enableGameTestFramework": true,
+		"renderDragonFeatures": true,
+		"educationEdition": false
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Underrated Anime Magic Pack"
+				}
+			]
+		]
+	}
+}
