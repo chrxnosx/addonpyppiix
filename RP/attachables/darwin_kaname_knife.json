@@ -1,0 +1,34 @@
+	{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "uam:darwin_kaname_knife",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/darwin_kaname_knife", 
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.darwin_kaname_knife" 
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.main_hand = c.item_slot == 'main_hand';",
+          "v.off_hand = c.item_slot == 'off_hand';"
+        ],
+        "animate": [
+          { "third_person": "c.is_third_person" },
+          { "first_person": "!c.is_third_person" }
+        ]
+      },
+      "animations": {
+        "third_person": "animation.humanoid.wield_third_person",
+        "first_person": "animation.humanoid.wield_first_person"
+      },
+      "render_controllers": [ "controller.render.item_default" ]
+    }
+  }
+}
