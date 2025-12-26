@@ -1,65 +1,40 @@
 {
-	"format_version": "1.21.10",
-	"minecraft:item": {
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
 		"description": {
 			"identifier": "uam:darwin_kaname_knife",
-			"menu_category": {
-				"category": "equipment",
-				"group": "itemGroup.name.sword"
-			}
-		},
-		"components": {
-			"minecraft:icon": {
-				"texture": "darwin_kaname_knife"
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
 			},
-			"minecraft:display_name": {
-				"value": "Kaname Knife"
+			"textures": {
+				"default": "textures/items/darwin_kaname_knife",
+				"enchanted": "textures/misc/enchanted_item_glint"
 			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:hand_equipped": true,
-			"minecraft:damage": 6,
-			"minecraft:enchantable": {
-				"value": 14,
-				"slot": "sword"
+			"geometry": {
+				"default": "geometry.darwin_kaname_knife"
 			},
-			"minecraft:durability": {
-				"max_durability": 251
-			},
-			"minecraft:repairable": {
-				"repair_items": [
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				],
+				"animate": [
 					{
-						"items": [
-							"minecraft:iron_ingot"
-						],
-						"repair_amount": "query.max_durability * 0.25"
+						"third_person": "c.is_third_person"
+					},
+					{
+						"first_person": "!c.is_third_person"
 					}
 				]
 			},
-			"minecraft:tags": {
-				"tags": [
-					"minecraft:is_sword",
-					"minecraft:is_tool"
-				]
+			"animations": {
+				"third_person": "animation.humanoid.wield_third_person",
+				"first_person": "animation.humanoid.wield_first_person"
 			},
-			// ❌ ลบ minecraft:custom_components ออก (ไม่ได้ใช้แล้ว)
-			// ✅ ยังต้องมี food เพื่อให้คลิกขวาได้
-			"minecraft:food": {
-				"nutrition": 0,
-				"saturation_modifier": 0,
-				"can_always_eat": true
-				// ❌ ลบ using_converts_to ออก (ไม่จำเป็นแล้ว)
-			},
-			// ✅ ตั้งเวลาไว้นานๆ กันพลาด (แต่จริงๆ script จะ cancel ทันที)
-			"minecraft:use_modifiers": {
-				"use_duration": 1000.0,
-				"movement_modifier": 1.0
-			},
-			"minecraft:use_animation": "bow",
-			// Cooldown (ใส่ไว้โชว์เฉยๆ ตัว Script จะเป็นคนสั่งทำงานจริง)
-			"minecraft:cooldown": {
-				"category": "uam_knife",
-				"duration": 1.5
-			}
+			"render_controllers": [
+				"controller.render.item_default"
+			]
 		}
 	}
 }

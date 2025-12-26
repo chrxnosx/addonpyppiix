@@ -9,11 +9,10 @@ world.afterEvents.itemUse.subscribe((event) => {
 
 	// --- เช็คว่าเป็น มีด หรือไม่ ---
 	// (สมมติว่าไอเทมมีดมีคำว่า sword หรือ knife ใน ID)
-	if (item.typeId.includes("sword") || item.typeId.includes("knife")) {
+	if (item.typeId === "uam:darwin_kaname_knife") {
 		handleKnifeSkill(player);
 		return;
 	}
-
 	// --- เช็คว่าเป็น ปืน หรือไม่ ---
 	// (สมมติว่าไอเทมปืนมีคำว่า gun หรือ pistol)
 	if (item.typeId.includes("gun") || item.typeId.includes("pistol")) {

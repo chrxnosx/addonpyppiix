@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.darwin_kaname_knife.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"hexadecagon": {
+					"rotation": [66, 60, -60],
+					"position": [3, 23, 4]
+				},
+				"bone": {
+					"rotation": [158.38481, -85.77785, 38.70317],
+					"position": [-9.38972, 3.28042, -0.59846],
+					"scale": 0.25
+				}
+			}
+		},
+		"animation.darwin_kaname_knife.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [90, 0, 0],
+					"position": [0.5, 22.5, -0.5]
+				},
+				"bone": {
+					"rotation": [89.07274, -91.21255, 90.80826],
+					"position": [0.06675, -0.08329, -2.96603],
+					"scale": 0.25
+				}
+			}
+		}
+	}
+}
